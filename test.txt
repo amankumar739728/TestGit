@@ -1,0 +1,2 @@
+This is test file used to send from local to git.
+File is created as test.txt and commited to git.

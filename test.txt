@@ -1,2 +1,40 @@
+
 This is test file used to send from local to git.
 File is created as test.txt and commited to git.
+
+#create a new folfer in c and name it as git
+$ cd        #home directory
+$ cd /c     #c directory
+$ ls        #list all the files and folder in this directory
+$ cd git/   #now we are in git folder inside c
+$ git config --global user.name "amankumar739728"             #username of git repository
+$ git config --global user.email "aman.kumar739728@gmail.com" #email for git repository
+$ git clone https://github.com/amankumar739728/TestGit.git    #cloning the git repository
+
+#after cloning TestGit folder will be created inside local and readme.txt file will be there.
+
+$ ls                # command output will be ==> TestGit/
+$ cd TestGit/       #go to TestGit folder directory
+$ ls                #gives output as "readme.txt" file
+
+
+#now go to folder "TestGit" and create a filename as "test.txt"
+
+$ ls                     #output file:=> readme.txt  test.txt
+$ git add test.txt       #add the file "test.txt" to github
+$ git status             #file status ==>changes are made/done
+
+#Before transfering these file to github do commit and push.
+
+$ git commit -m "first commit msg" test.txt
+$ git push -u origin master/main
+
+#==>first time it will redirect to git login enter username and password.
+#==>login and refresh the repo there u will find the readme as well as test.txt file
+
+
+#2nd commit or changes Made
+
+$ git status     #to check whether any change is made to current file
+$ git commit -m "second commit done msg" test.txt     #used to commit the changes
+$ git push -u origin master/main     #push the file to github repository...main or master anything as per use.
